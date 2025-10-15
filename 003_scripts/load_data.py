@@ -20,4 +20,3 @@ def load_data(path: str) -> pd.DataFrame:
     except Exception as e:
         print(f"Error loading data from {path}: {e}")
         raise
-#kc_data = load_data("../001_data/King_County_House_prices_dataset.csv")

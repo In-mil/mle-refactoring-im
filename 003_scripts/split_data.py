@@ -34,5 +34,3 @@ def split_data(df: pd.DataFrame, target: str = "price") -> tuple:
     print("First rows of X_train:\n", X_train.head())
 
     return X_train, X_test, y_train, y_test
-
-    #X_train, X_test, y_train, y_test = split_data(kc_data)

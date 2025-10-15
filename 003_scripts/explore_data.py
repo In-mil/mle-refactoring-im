@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import numpy as np
 
 def explore_data(df: pd.DataFrame) -> None:
     """
@@ -32,18 +33,32 @@ def explore_data(df: pd.DataFrame) -> None:
     print(df.describe().round(2))
 
     # Histograms for selected variables
-    columns_histogram = ['price', 'bathrooms', 'bedrooms', 'floors', 'grade',
-                         'lastknownchange', 'sqftliving', 'sqftlot']
+    columns_histogram = [
+        'price',
+        'bathrooms',
+        'bedrooms',
+        'floors',
+        'grade',
+        'sqft_living',
+        'sqft_lot'
+    ]
+    # Only include lastknownchange if it exists
+    if 'lastknownchange' in df.columns:
+        columns_histogram.append('lastknownchange')
+
     print("\nPlotting histograms...")
     df[columns_histogram].hist(bins=50, figsize=(20, 15))
     plt.show()
 
     # Boxplot for price
     print("\nPlotting boxplot for price...")
+    # Log-Transformation der Preise (füge neue Spalte hinzu)
+    df['log_price'] = np.log(df['price'])
+
     plt.figure(figsize=(10, 6))
-    sns.boxplot(y=df['price'])
-    plt.title("Boxplot of House Prices")
-    plt.ylabel("Price")
+    sns.boxplot(y=df['log_price'])
+    plt.title("Boxplot of log(House Prices)")
+    plt.ylabel("log(Price)")
     plt.show()
 
     # Scatterplots for price and sqftprice vs. distance to center/water
@@ -71,5 +86,7 @@ def explore_data(df: pd.DataFrame) -> None:
 
     # Pairplot for selected variables
     print("\nScatter/Pairs plot for selected variables:")
-    sns.pairplot(df[columns_histogram])
+    # Remove any columns not present (e.g. lastknownchange)
+    safe_columns = [col for col in columns_histogram if col in df.columns]
+    sns.pairplot(df[safe_columns])
     plt.show()
