@@ -7,26 +7,35 @@ MLE-REFACTORING-IM/
 │ ├── King-County.ipynb
 │ └── project-for-today.md
 ├── 003_scripts/
-│ ├── 01.load_data.py
-│ ├── 02.clean_data.py
-│ ├── 03.feature_engineering.py
-│ ├── 04.explore_data.py
-│ ├── 05.split_data.py
-│ ├── 06.train_model.py
-│ ├── 07.evaluate_model.py
-│ ├── 08.safe_model.py
+│ ├── clean_data.py
+│ ├── evaluate_model.py
+│ ├── explore_data.py
+│ ├── feature_engineering.py
+│ ├── load_data.py
 │ ├── main.py
 │ ├── README.md
+│ ├── safe_model.py
 │ ├── schemas.py
+│ ├── split_data.py
+│ ├── train_model.py
 │ └── utils.py
 ├── 004_reports_and_images/
+│ ├── 20251015_correlationmatrix_king_county.png
 │ ├── DS_LC.png
+│ ├── elasticnet_model.skops
 │ ├── king_county_districts.jpeg
+│ ├── lin_model.skops
+│ ├── poly_model.skops
 │ └── seattle_skyline.jpg
+├── .github/
 ├── .gitignore
+├── .python-version
+├── app.py
+├── Dockerfile
+├── houses.db
 ├── LICENSE
 ├── README.md
-├── requirements.txt
+└── requirements.txt
 ```
 # Refactoring Project
 
