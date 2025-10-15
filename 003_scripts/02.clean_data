@@ -4,7 +4,6 @@ import pandas as pd
 def clean_king_county_data(kc_data: pd.DataFrame) -> pd.DataFrame:
     """
     Clean King County housing data.
-
     - Removes houses with 33 bedrooms.
     - Cleans and fills 'sqftbasement', 'view', and 'waterfront'.
     - Creates a 'lastknownchange' column and drops year columns.

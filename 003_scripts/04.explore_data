@@ -74,3 +74,5 @@ def explore_data(df: pd.DataFrame) -> None:
     print("\nScatter/Pairs plot for selected variables:")
     sns.pairplot(df[columns_histogram])
     plt.show()
+
+    #explore_data(kc_data)
