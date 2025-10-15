@@ -1,26 +1,32 @@
 # Project Folger Structure
 ```
-MLE-REFACTORING/
-├── .github/
-├── .venv/
+MLE-REFACTORING-IM/
 ├── 001_data/
-│   └── King_County_House_prices_dataset.csv
+│ └── King_County_House_prices_dataset.csv
 ├── 002_notebooks/
-│   ├── King-County.ipynb
-│   └── project-for-today.md
+│ ├── King-County.ipynb
+│ └── project-for-today.md
 ├── 003_scripts/
-│   ├── database.py
-│   ├── main.py
-│   ├── models.py
-│   └── data_cleaning.py
+│ ├── 01.load_data.py
+│ ├── 02.clean_data.py
+│ ├── 03.feature_engineering.py
+│ ├── 04.explore_data.py
+│ ├── 05.split_data.py
+│ ├── 06.train_model.py
+│ ├── 07.evaluate_model.py
+│ ├── 08.safe_model.py
+│ ├── main.py
+│ ├── README.md
+│ ├── schemas.py
+│ └── utils.py
 ├── 004_reports_and_images/
-├── README.md
-├── schemas.py
+│ ├── DS_LC.png
+│ ├── king_county_districts.jpeg
+│ └── seattle_skyline.jpg
 ├── .gitignore
 ├── LICENSE
-├── requirements.txt
 ├── README.md
-├── .python-version
+├── requirements.txt
 ```
 # Refactoring Project
 
