@@ -1,0 +1,12 @@
+def save_model(model, path: str) -> None:
+    """
+    Saves the trained model to a file.
+
+    Args:
+        model: Trained model.
+        path (str): Output path.
+
+    Returns:
+        None
+    """
+    # Saving logic here

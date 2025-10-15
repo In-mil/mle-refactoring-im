@@ -1,0 +1,13 @@
+def evaluate_model(model, X_test: pd.DataFrame, y_test: pd.Series) -> None:
+    """
+    Evaluates and prints model performance.
+
+    Args:
+        model: Trained model.
+        X_test (pd.DataFrame): Test features.
+        y_test (pd.Series): True target values.
+
+    Returns:
+        None
+    """
+    # Performance metric calculations and print output

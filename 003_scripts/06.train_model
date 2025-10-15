@@ -1,0 +1,17 @@
+def train_model(
+    X_train: pd.DataFrame,
+    y_train: pd.Series,
+    model_type: str = "linear"
+):
+    """
+    Trains a regression model.
+
+    Args:
+        X_train (pd.DataFrame): Training features.
+        y_train (pd.Series): Training target.
+        model_type (str): 'linear', 'poly', or 'elasticnet'.
+
+    Returns:
+        fitted model
+    """
+    # Model training logic here

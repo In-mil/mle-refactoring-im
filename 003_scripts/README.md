@@ -1,0 +1,1 @@
+For now, only structure and templates stored

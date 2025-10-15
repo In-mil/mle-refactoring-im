@@ -1,0 +1,21 @@
+def split_data(
+    df: pd.DataFrame,
+    features: list,
+    target: str,
+    test_size: float = 0.3,
+    random_state: int = 42
+) -> tuple:
+    """
+    Splits the data into training and test sets.
+
+    Args:
+        df (pd.DataFrame): Source data.
+        features (list): Feature columns.
+        target (str): Target variable.
+        test_size (float): Test set fraction.
+        random_state (int): Seed for reproducibility.
+
+    Returns:
+        tuple: X_train, X_test, y_train, y_test
+    """
+    # Splitting logic here
