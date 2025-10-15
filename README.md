@@ -68,3 +68,16 @@ The necessary libraries are listed in the [requirements.txt](./requirements.txt)
   python -m pip install --upgrade pip
   pip install -r requirements.txt
   ```
+  # Steps Taken to Complete the Project
+Explored and cleaned the King County housing data in a Jupyter notebook.​
+
+- Refactored code from notebook cells into modular Python files for loading, cleaning, feature engineering, splitting, training, and evaluating models.
+
+- Built a pipeline to automate data cleaning and feature engineering.
+
+- Implemented and evaluated ML models (Linear, Polynomial, ElasticNet regression) using Scikit-learn.
+
+- Created a FastAPI app providing CRUD for house records with 5 core features.
+
+- Wrote a Dockerfile and ran the FastAPI app inside a Docker container for reproducible API deployment.
+
