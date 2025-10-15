@@ -3,7 +3,6 @@ import pandas as pd
 
 def split_data(df: pd.DataFrame, target: str = "price") -> tuple:
     """
-    Mirrors the notebook split-data workflow.
     - Drops columns from leakage/unused list.
     - Creates feature and target variables.
     - Splits data into train and test sets.

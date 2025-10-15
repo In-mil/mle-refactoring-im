@@ -4,7 +4,6 @@ import pandas as pd
 
 def explore_data(df: pd.DataFrame) -> None:
     """
-    Mirrors the EDA block from the notebook:
     - Shows basic info and missing values.
     - Shows value counts and unique values for important columns.
     - Plots histograms, boxplots, pairplots, and correlation heatmap.
@@ -74,5 +73,3 @@ def explore_data(df: pd.DataFrame) -> None:
     print("\nScatter/Pairs plot for selected variables:")
     sns.pairplot(df[columns_histogram])
     plt.show()
-
-    #explore_data(kc_data)
